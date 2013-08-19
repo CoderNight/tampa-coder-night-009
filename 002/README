@@ -1,0 +1,16 @@
+Goal:
+It's been 10 years since I looked at language grammars. I've always wanted to use them more in my work, but never
+have the time to figure them out again. peg.js (http://pegjs.majda.cz/) is used to generate a parser from the grammar
+in lib/logo_language.pegjs.
+
+Requires:
+node.js (tested on v0.10.15)
+
+Usage:
+(Re)generate the parser from the grammar:
+node lib/pegjs lib/logo_language.pegjs
+
+will generate lib/logo_language.js
+
+Run:
+node bin/logoapp.js file.logo
